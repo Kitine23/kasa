@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home'
+import MainLayout from './layouts/Main'
 
 const router = createBrowserRouter([
   {
@@ -22,23 +23,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <>
-      <nav>
-        logo
-        <ul>
-          <li>
-            <a href={`/home`}>Accueil</a>
-          </li>
-          <li>
-            <a href={`/fiche-logement`}>Fiche logement</a>
-          </li>
-          <li>
-            <a href={`/about`}>A propos</a>
-          </li>
-        </ul>
-      </nav>
+    <MainLayout>
       <RouterProvider router={router} />
-    </>
+    </MainLayout>
   )
 }
 
