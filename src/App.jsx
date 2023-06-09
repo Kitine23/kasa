@@ -11,12 +11,12 @@ const router = createBrowserRouter([
     element: <h1>Fiche-Logement</h1>,
   },
   {
-    path: '/404',
-    element: <h1>404</h1>,
-  },
-  {
     path: '/about',
     element: <h1>A propos</h1>,
+  },
+  {
+    path: '*',
+    element: <h1>404</h1>,
   },
 ])
 
