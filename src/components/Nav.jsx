@@ -1,16 +1,26 @@
+import styles from './Nav.module.scss'
+import { NavLink } from 'react-router-dom'
+
+// https://reactrouter.com/en/main/components/nav-link#navlink
 export default function Nav() {
   return (
-    <nav>
-      header
+    <nav className={styles.nav}>
       <ul>
         <li>
-          <a href={`/home`}>Accueil</a>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? styles.active : '')}
+          >
+            Accueil
+          </NavLink>
         </li>
         <li>
-          <a href={`/fiche-logement`}>Fiche logement</a>
-        </li>
-        <li>
-          <a href={`/about`}>A propos</a>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? styles.active : '')}
+          >
+            A propos
+          </NavLink>
         </li>
       </ul>
     </nav>
