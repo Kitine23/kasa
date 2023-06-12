@@ -1,14 +1,19 @@
-import Nav from '../Nav'
+import KIcon from '../icons/KIcon'
+import HouseIcon from '../icons/HouseIcon'
+import SIcon from '../icons/SIcon'
+import AIcon from '../icons/AIcon'
+
+import Nav from '../nav/Nav'
 import styles from './Header.module.scss'
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <div>
-        <img src="/logo/k.svg" alt="lettre K" />
-        <img src="/logo/house.svg" alt="lettre A" />
-        <img src="/logo/s.svg" alt="lettre S" />
-        <img src="/logo/a.svg" alt="lettre A" />
+        <KIcon />
+        <HouseIcon />
+        <SIcon />
+        <AIcon />
       </div>
       <Nav />
     </header>
