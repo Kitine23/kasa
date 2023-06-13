@@ -1,11 +1,32 @@
+@use '../../styles/media' as *;
+
 .header {
   display: flex;
   justify-content: space-between;
   max-width: 1240px;
   margin-inline: auto;
   padding-block: 2rem;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
+  padding-inline: 1.2rem;
+
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    @include mobile {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  svg:first-child {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    @include mobile {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
 }

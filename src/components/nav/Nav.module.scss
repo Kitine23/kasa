@@ -1,6 +1,13 @@
+@use '../../styles/media' as *;
+
 .nav {
   ul > li > a {
     color: #ff6060;
+
+    @include mobile {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
   }
 
   ul {
@@ -8,6 +15,10 @@
     gap: 3.5rem;
     align-items: center;
     height: 100%;
+
+    @include mobile {
+      gap: 1.5rem;
+    }
   }
 }
 

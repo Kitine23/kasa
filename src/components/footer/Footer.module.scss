@@ -1,3 +1,5 @@
+@use '../../styles/media' as *;
+
 .footer {
   background: #000;
   color: #ffffff;
@@ -8,8 +10,40 @@
   padding-top: 4rem;
   padding-bottom: 2rem;
   gap: 2rem;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
+
+  @include mobile {
+    font-size: 12px;
+    padding-bottom: 4rem;
+    gap: 1rem;
+  }
+
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    @include mobile {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  svg:first-child {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    @include mobile {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  p {
+    @include mobile {
+      text-align: center;
+      max-width: 6rem;
+    }
+  }
 }

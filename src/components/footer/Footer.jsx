@@ -13,7 +13,7 @@ export default function Footer() {
         <SIcon color="#fff" />
         <AIcon color="#fff" />
       </div>
-      <p>© 2020 Kasa. All right reserved</p>
+      <p>© 2020 Kasa. All rights reserved</p>
     </div>
   )
 }
