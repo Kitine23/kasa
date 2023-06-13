@@ -1,0 +1,19 @@
+@use '../../styles/utils' as *;
+
+.gallery {
+  background: #f7f7f7;
+  border-radius: 25px;
+  padding: 50px;
+  margin-block: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    background: none;
+    padding: 0;
+    grid-row-gap: 2rem;
+  }
+}

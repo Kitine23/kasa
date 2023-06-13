@@ -1,7 +1,14 @@
+import Banner from '../components/banner'
+import Gallery from '../components/gallery/Gallery'
+
 export default function Home() {
   return (
     <>
-      <h1>home</h1>
+      <Banner
+        img="/img/banner-home.jpg"
+        title="Chez vous, partout et ailleurs"
+      />
+      <Gallery />
     </>
   )
 }

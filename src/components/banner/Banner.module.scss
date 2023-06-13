@@ -1,0 +1,32 @@
+@use '../../styles/utils' as *;
+
+.banner {
+  width: 100%;
+  height: 223px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  overflow: hidden;
+
+  @include mobile {
+    border-radius: 10px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    backdrop-filter: brightness(0%) opacity(30%);
+
+    @include mobile {
+      font-size: 24px;
+      padding-right: 30%;
+    }
+  }
+}

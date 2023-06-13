@@ -1,13 +1,15 @@
-div,
-section,
-article,
-main,
-header,
-footer,
-aside,
-nav {
-  border: none;
-}
+@use './utils' as *;
+
+// div,
+// section,
+// article,
+// main,
+// header,
+// footer,
+// aside,
+// nav {
+//   border: thin solid pink;
+// }
 
 :root {
   font-family: 'Montserrat';
@@ -15,4 +17,8 @@ nav {
 
 a {
   text-decoration: none;
+}
+
+main {
+  @include container;
 }
