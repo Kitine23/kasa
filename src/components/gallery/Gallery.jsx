@@ -1,24 +1,7 @@
 import { API_HOST } from '../../config/api'
 import Card from '../card/Card'
 import styles from './Gallery.module.scss'
-import { useEffect, useState } from 'react'
-
-const useFetch = (apiRoute) => {
-  const [isLoading, setIsLoading] = useState(false)
-  const [data, setData] = useState([])
-
-  useEffect(() => {
-    setIsLoading(true)
-    fetch(apiRoute)
-      .then((response) => response.json())
-      .then((data) => {
-        setData(data)
-        setIsLoading(false)
-      })
-  }, [apiRoute])
-
-  return { data, isLoading }
-}
+import { useFetch } from '../../hooks/useFetch'
 
 export default function Gallery() {
   const { data: estates, isLoading } = useFetch(API_HOST)

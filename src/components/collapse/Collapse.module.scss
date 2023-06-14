@@ -1,0 +1,54 @@
+@use '../../styles/utils' as *;
+
+$transition-speed: 0.5s;
+
+.collapse {
+  width: 100%;
+  overflow: hidden;
+
+  header {
+    background-color: #ff6060;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 15px;
+    width: 100%;
+    height: 52px;
+    color: #fff;
+    font-size: 24px;
+    z-index: 1;
+
+    svg {
+      cursor: pointer;
+      transition: transform $transition-speed;
+
+      &.down {
+        transform: rotateZ(-180deg);
+      }
+    }
+
+    button {
+      background: transparent;
+      border: none;
+    }
+  }
+
+  .collapse-body {
+    position: relative;
+    background-color: #f6f6f6;
+    border-radius: 0 0 5px 5px;
+    color: #ff6060;
+    overflow: hidden;
+    padding: 0 20px;
+    height: 0;
+    transition: padding $transition-speed, height $transition-speed;
+    z-index: -1;
+
+    &.active {
+      padding: 20px;
+      height: auto;
+    }
+  }
+}
