@@ -1,2 +1,30 @@
 .notFound {
+  color: #ff6060;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 6rem;
+
+  h1 {
+    font-weight: 700;
+    font-size: 288px;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 36px;
+    padding-block: 2rem;
+  }
+
+  a {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration-line: underline;
+    padding-block: 2rem;
+
+    &:visited {
+      color: #ff6060;
+    }
+  }
 }
