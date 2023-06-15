@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react'
 
 export const useFetch = (apiRoute) => {
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const [data, setData] = useState([])
 
   useEffect(() => {
-    setIsLoading(true)
     fetch(apiRoute)
       .then((response) => response.json())
       .then((data) => {

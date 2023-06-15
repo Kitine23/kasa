@@ -12,7 +12,13 @@ export default function Gallery() {
     <div className={styles.gallery}>
       {estates?.length > 0 &&
         estates.slice(0, 6).map((estate) => {
-          return <Card key={estate.id} title={estate.title} />
+          return (
+            <Card
+              key={estate.id}
+              title={estate.title}
+              href={`/fiche-logement/${estate.id}`}
+            />
+          )
         })}
     </div>
   )
