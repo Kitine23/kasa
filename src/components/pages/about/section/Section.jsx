@@ -5,22 +5,27 @@ export default function Section() {
   return (
     <section className={styles.section}>
       <Collapse title="Fiabilité">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-        placeat.
+        Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+        photos sont conformes au logement, et toutes les informations sont
+        régulièrement vérifiées par nos équipes.
       </Collapse>
       <Collapse title="Respect">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odit
-        dolore. Unde.
+        La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
+        comportement discriminatoire ou de perturbation du voisinage entraînera
+        une exclusion de notre plateforme.
       </Collapse>
       <Collapse title="Service">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        consequuntur facilis, non perferendis libero eius in sequi odit. Alias
-        facilis autem asperiores
+        La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
+        comportement discriminatoire ou de perturbation du voisinage entraînera
+        une exclusion de notre plateforme.
       </Collapse>
       <Collapse title="Sécurité">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus
-        ipsa culpa repellat deleniti consequatur quibusdam aspernatur sit
-        tenetur eveniet?
+        La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour
+        les voyageurs, chaque logement correspond au critères de sécurité
+        établis par nos service. En laissant une note aussi bien à l'hôte qu'au
+        locataire, cela permet à nos équipes de vérifier que les standards sont
+        bien respectés. Nous organisons également des ateliers sur la sécurité
+        domestiques pour nos hôtes.
       </Collapse>
     </section>
   )

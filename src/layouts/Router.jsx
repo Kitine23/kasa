@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import Home from '../routes/Home'
 import MainLayout from './Main'
 import About from '../routes/About'
+import NotFound from '../routes/NotFound'
 
 // https://stackoverflow.com/a/74168838
 export const Router = createBrowserRouter([
@@ -22,7 +23,7 @@ export const Router = createBrowserRouter([
       },
       {
         path: '*',
-        element: <h1>404</h1>,
+        element: <NotFound />,
       },
     ],
   },

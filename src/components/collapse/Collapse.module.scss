@@ -20,6 +20,11 @@ $transition-speed: 0.5s;
     font-size: 24px;
     z-index: 1;
 
+    @include mobile {
+      height: 30px;
+      padding: 10px 0px 10px 10px;
+    }
+
     svg {
       cursor: pointer;
       transition: transform $transition-speed;
