@@ -22,22 +22,26 @@ export default function Estate() {
   return (
     <article className={styles.estate}>
       <div className={styles.body}>
-        <h1>{estate.title}</h1>
-        <p>{estate.location}</p>
-        <div className={styles.tags}>
-          {estate.tags.map((tag) => (
-            <button key={tag}>{tag}</button>
-          ))}
+        <div className={styles.content}>
+          <h1>{estate.title}</h1>
+          <p>{estate.location}</p>
+          <div className={styles.tags}>
+            {estate.tags.map((tag) => (
+              <button key={tag}>{tag}</button>
+            ))}
+          </div>
         </div>
-        <div className={styles.host}>
-          <p>{estate.host.name}</p>
-          <CircleIcon />
+        <div className={styles.about}>
+          <div className={styles.host}>
+            <p>{estate.host.name.split(' ').join('\n')}</p>
+            <CircleIcon />
+          </div>
           <div className={styles.stars}>
             <Stars note={parseInt(estate.rating)} />
           </div>
         </div>
       </div>
-      <div className={styles.collapse}>
+      <div className={styles.collapses}>
         <Collapse title="Description">{estate.description}</Collapse>
         <Collapse title="Équipements">{estate.equipments}</Collapse>
       </div>

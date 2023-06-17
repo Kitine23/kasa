@@ -23,6 +23,7 @@ $transition-speed: 0.5s;
     @include mobile {
       height: 30px;
       padding: 10px 0px 10px 10px;
+      font-size: 13px;
     }
 
     svg {
@@ -31,6 +32,11 @@ $transition-speed: 0.5s;
 
       &.down {
         transform: rotateZ(-180deg);
+      }
+
+      @include mobile {
+        width: 16px;
+        height: 16px;
       }
     }
 

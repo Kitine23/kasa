@@ -3,6 +3,9 @@
 .card {
   cursor: pointer;
   background-color: #ff6060;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   border-radius: 10px;
   padding: 2rem;
   aspect-ratio: 1/1;

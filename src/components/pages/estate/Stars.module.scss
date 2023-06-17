@@ -1,6 +1,17 @@
+@use '../../../styles/utils' as *;
+
 .stars {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: center;
-  padding: 1rem;
+  padding-block: 1rem;
+
+  @include mobile {
+    gap: 0.5rem;
+
+    & > svg {
+      width: 13px;
+      height: 13px;
+    }
+  }
 }

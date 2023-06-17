@@ -17,6 +17,7 @@ export default function Gallery() {
               key={estate.id}
               title={estate.title}
               href={`/fiche-logement/${estate.id}`}
+              img={estate.cover}
             />
           )
         })}
