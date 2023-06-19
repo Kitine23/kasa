@@ -1,5 +1,5 @@
 import styles from './Section.module.scss'
-import Collapse from '../../../collapse/Collapse'
+import Collapse from '../../../collapse'
 
 export default function Section() {
   return (

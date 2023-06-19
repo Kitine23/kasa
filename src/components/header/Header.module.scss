@@ -6,7 +6,12 @@
   font-weight: 500;
   font-size: 24px;
   padding-block: 2rem;
+
   @include container;
+
+  @include mobile {
+    padding-block: 2rem 0.5rem;
+  }
 
   svg {
     width: 2.5rem;

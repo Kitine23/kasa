@@ -7,6 +7,11 @@
   margin-block: 1rem;
   position: relative;
 
+  @include mobile {
+    height: 255px;
+    border-radius: 10px;
+  }
+
   img {
     position: absolute;
     inset: 0;
@@ -26,12 +31,20 @@
       z-index: 10;
       border: none;
       background-color: transparent;
-      color: white;
-      font-size: 10rem;
       cursor: pointer;
+      padding-inline: 1rem;
+
+      @include mobile {
+        padding-inline: 0;
+      }
+
+      svg {
+        @include mobile {
+          height: 30px;
+        }
+      }
     }
   }
-
   .pagination {
     color: white;
     font-size: 2rem;
@@ -41,5 +54,9 @@
     text-align: center;
     width: 100%;
     bottom: 0;
+
+    @include mobile {
+      color: transparent;
+    }
   }
 }
