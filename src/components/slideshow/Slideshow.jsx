@@ -17,7 +17,9 @@ export default function Slideshow({ images }) {
           <NextIcon />
         </button>
       </nav>
-      <div className={styles.pagination}>{slideIndex + 1}/4</div>
+      <div className={styles.pagination}>
+        {slideIndex + 1}/{images.length}
+      </div>
     </section>
   )
 }

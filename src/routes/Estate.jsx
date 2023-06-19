@@ -45,7 +45,13 @@ export default function Estate() {
       </div>
       <div className={styles.collapses}>
         <Collapse title="Description">{estate.description}</Collapse>
-        <Collapse title="Équipements">{estate.equipments}</Collapse>
+        <Collapse title="Équipements">
+          <ul>
+            {estate.equipments.map((equipment) => (
+              <li key={equipment}>{equipment}</li>
+            ))}
+          </ul>
+        </Collapse>
       </div>
     </article>
   )
