@@ -5,6 +5,7 @@ import Collapse from '../components/collapse/Collapse'
 import CircleIcon from '../components/icons/CircleIcon'
 import Stars from '../components/pages/estate/Stars'
 import styles from './Estate.module.scss'
+import Slideshow from '../components/slideshow/Slideshow'
 
 export default function Estate() {
   const { id } = useParams()
@@ -21,6 +22,7 @@ export default function Estate() {
 
   return (
     <article className={styles.estate}>
+      <Slideshow images={estate.pictures} />
       <div className={styles.body}>
         <div className={styles.content}>
           <h1>{estate.title}</h1>
