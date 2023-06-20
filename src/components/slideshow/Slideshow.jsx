@@ -9,17 +9,21 @@ export default function Slideshow({ images }) {
   return (
     <section className={styles.slideshow}>
       <img src={images.at(slideIndex)} alt="" />
-      <nav>
-        <button onClick={prev}>
-          <PrevIcon />
-        </button>
-        <button onClick={next}>
-          <NextIcon />
-        </button>
-      </nav>
-      <div className={styles.pagination}>
-        {slideIndex + 1}/{images.length}
-      </div>
+      {images.length > 1 && (
+        <>
+          <nav>
+            <button onClick={prev}>
+              <PrevIcon />
+            </button>
+            <button onClick={next}>
+              <NextIcon />
+            </button>
+          </nav>
+          <div className={styles.pagination}>
+            {slideIndex + 1}/{images.length}
+          </div>
+        </>
+      )}
     </section>
   )
 }
