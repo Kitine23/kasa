@@ -1,4 +1,4 @@
-import StarIcon from '../../icons/StarIcon'
+import StarIcon from '../icons/StarIcon'
 import styles from './Stars.module.scss'
 
 export default function Stars({ note }) {

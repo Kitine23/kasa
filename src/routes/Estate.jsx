@@ -3,7 +3,7 @@ import { useFetch } from '../hooks/useFetch'
 import { API_HOST } from '../config/api'
 import Collapse from '../components/collapse/Collapse'
 import CircleIcon from '../components/icons/CircleIcon'
-import Stars from '../components/pages/estate/Stars'
+import Stars from '../components/stars'
 import styles from './Estate.module.scss'
 import Slideshow from '../components/slideshow/Slideshow'
 
